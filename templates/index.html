@@ -45,15 +45,15 @@
 </head>
 <body>
     <div class="container">
-        <h1>Contador de Palabras</h1>
+        <h1>Count of Words</h1>
         <form method="POST">
-            <input type="text" name="text" placeholder="Escribe algo..." required>
+            <input type="text" name="text" placeholder="Say Something..." required>
             <br>
-            <button type="submit">Contar Palabras</button>
+            <button type="submit">Count</button>
         </form>
         {% if word_count is not none %}
         <div class="result">
-            Número de palabras ingresadas: {{ word_count }}
+            Number of words in your input is: {{ word_count }}
         </div>
         {% endif %}
     </div>
